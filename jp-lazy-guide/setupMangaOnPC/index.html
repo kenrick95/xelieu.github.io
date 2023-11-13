@@ -1757,7 +1757,7 @@
 <p>Open <code>command prompt</code> by winkey/search &gt; cmd</p>
 </li>
 <li>
-<p>Type <code>pip install git+https://github.com/ZXY101/mokuro.git@master</code></p>
+<p>Type <code>pip install git+https://github.com/kha-white/mokuro.git@web-reader</code></p>
 <ul>
 <li>Then just let it download/install for a few mins until it's done and you can type again</li>
 <li>If <code>pip3 is not recognized...</code> then just uninstall &gt; restart &gt; install Python repeatedly (I know it's dumb but that's how)</li>
@@ -1800,15 +1800,52 @@
 <h3 id="reading-processed-manga">Reading Processed Manga</h3>
 <ol>
 <li>
-<p>In your <code>Manga</code> folder after and open the <code>.html</code> file</p>
-<p><img alt="Mokuro HTML File" height="150" src="../../img/mokuro-html-file.png" width="300" /></p>
+<p>In your Anki, <code>Ctrl + Shift + A</code> or <code>Tools</code> &gt; <code>Add-ons</code></p>
+<ul>
+<li>Select <code>AnkiConnect</code> &gt; <code>Config</code></li>
+<li>Under <code>webCorsOriginList</code> paste <code>https://reader.mokuro.app</code> or copy config below:</li>
+</ul>
+<details class="examplecode">
+<summary>AnkiConnect Config <small>(click here)</small></summary>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>{
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    &quot;apiKey&quot;: null,
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    &quot;apiLogPath&quot;: null,
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    &quot;ignoreOriginList&quot;: [],
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    &quot;webBindAddress&quot;: &quot;127.0.0.1&quot;,
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    &quot;webBindPort&quot;: 8765,
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    &quot;webCorsOriginList&quot;: [
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>        &quot;http://localhost&quot;,
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>        &quot;https://reader.mokuro.app&quot;
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>        ]
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>}
+</code></pre></div>
+</details>
+<p><img alt="AnkiConnect PC" height="150" src="../../img/ankiconnect-pc.png" width="300" /></p>
 </li>
 <li>
-<p>You can now hover over the <code>words</code> to use <code>Yomichan</code> like usual</p>
+<p>Go to <a href="https://reader.mokuro.app/">Mokuro Reader</a> &gt; <code>Upload</code> Icon (top right) &gt; <code>choose directory</code></p>
 <ul>
-<li>Use <code>ShareX</code> hotkeys to <code>screenshot</code></li>
+<li>Select the <code>Manga</code> folder that contains the manga, mokuro'd files and .mokuro</li>
+<li>Click <code>Upload</code></li>
 </ul>
-<p><img alt="Mokuro PC" height="300" src="../../img/mokuro-pc.png" width="600" /></p>
+<p><img alt="Mokuro upload" height="300" src="../../img/mokuro-upload.png" width="600" /></p>
+</li>
+<li>
+<p>In the top right, go to <code>settings</code> &gt; <code>Profile</code> &gt; <code>Select a File</code> &gt; <a href="https://drive.google.com/drive/folders/1vX40zrvkGN13o_3WRYzqP1-L0F8mX6JJ?usp=sharing">Mokuro Profile</a> &gt; <code>Import Profiles</code> &gt; Select <code>PC Profle</code></p>
+<ul>
+<li>Alternatively you can make your own profile just make sure to set-up everything on <code>Anki Connect</code> portion</li>
+</ul>
+<p><img alt="Mokuro Settings" height="50" src="../../img/mokuro-settings.png" width="100" /></p>
+</li>
+<li>
+<p>To be able to mine, simply add the word using <code>yomichan</code></p>
+<ul>
+<li>To screenshot, make sure to double click/tap inside the <code>text border</code> (its invisible by default)</li>
+</ul>
+<p><img alt="Mokuro Settings" height="400" src="../../img/mokuro-yomichan.png" width="800" /></p>
+</li>
+<li>
+<p>You should now be able to mine and screenshot in your Manga with ease</p>
 </li>
 </ol>
 <div class="admonition note">
@@ -1876,7 +1913,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 5, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 13, 2023</span>
       
     
   </small>
