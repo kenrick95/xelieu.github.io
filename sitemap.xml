@@ -66,6 +66,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://xelieu.github.io/jp-lazy-guide/setupAnkiOld/</loc>
+         <lastmod>2023-11-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://xelieu.github.io/jp-lazy-guide/setupLnOnAndroid/</loc>
          <lastmod>2023-11-13</lastmod>
          <changefreq>daily</changefreq>
@@ -117,6 +122,11 @@
     </url>
     <url>
          <loc>https://xelieu.github.io/jp-lazy-guide/transferAnkiSetup/</loc>
+         <lastmod>2023-11-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://xelieu.github.io/jp-lazy-guide/updateAnkiJPMNFork/</loc>
          <lastmod>2023-11-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
